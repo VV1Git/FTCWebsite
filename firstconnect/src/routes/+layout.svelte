@@ -21,7 +21,7 @@
           <a class="nav-link" class:active={$page.route.id == "/about"} href="/about">About Us</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" class:active={$page.route.id == "/posts"} href="/posts">Connect</a>
+            <a class="nav-link" class:active={$page.route.id == "/connect"} href="/connect">Connect</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" class:active={$page.route.id == "/faq"} href="/faq">FAQ</a>
