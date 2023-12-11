@@ -1,0 +1,1 @@
+UPDATE _admins SET passwordHash="$2a$10$xWbkSks7OiTmrri2DU6QSe6OAekcdqkOrkcI1wi4uiv9SU2HTlHoq" where email="abc@abc.com"
