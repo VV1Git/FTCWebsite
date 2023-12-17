@@ -45,23 +45,28 @@
         if (number == undefined) {
             number = -1;
         }
-
         let collection = pb.collection(mentor ? "mentors" : "mentees");
-        await collection.create({
-            "emailVisibility": true,
-            "email": email,
-            "password": password,
-            "passwordConfirm": password,
-            "name": name,
-            "number": number,
-            "program": program,
-            "meeting": meetingtype,
-            "country": country,
-            "state": state,
-            "city": city,
-            "zip_code": zip,
-            "skill": skill
-        });
+        try {
+            await collection.create({
+                "emailVisibility": true,
+                "email": email,
+                "password": password,
+                "passwordConfirm": password,
+                "name": name,
+                "number": number,
+                "program": program,
+                "meeting": meetingtype,
+                "country": country,
+                "state": state,
+                "city": city,
+                "zip_code": zip,
+                "skill": skill
+            });
+        } catch (e: any) {
+            alert(JSON.stringify(e.data));
+            creating = false;
+            return;
+        }
         await collection.authWithPassword(email, password);
 
         creating = false;

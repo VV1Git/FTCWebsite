@@ -18,18 +18,42 @@ onMount(async () => {
 })
 </script>
 
+<style>
+    .enhanced-card {
+      background-color: #f8f9fa; /* Light gray background */
+      padding: 20px;
+      border-radius: 15px;
+      width: 80%; /* Adjust the width as needed */
+      margin: 0 auto; /* Center the card */
+    }
+  
+    .card-title {
+      color: #007bff; /* Blue title */
+      font-size: 24px;
+    }
+  
+    .card-text {
+      color: #495057; /* Dark text color */
+      font-size: 18px;
+    }
+  </style>
+
 {#if $user}
 {#if mentor != undefined}
-  <div class="container mt-4">
-    <div class="card">
-      <div class="card-body">
-        <h4 class="card-title text-center">{mentor["name"].charAt(0).toUpperCase()}{mentor["name"].slice(1)}</h4>
-        <p class="card-text">Located in {mentor["city"].charAt(0).toUpperCase()}{mentor["city"].slice(1)}, {mentor["state"]}</p>
-        {mentor["skill"]}
-        <p class="card-text">Good at {mentor["skill"]}</p>
-        <p class="card-text">Contact them through their email: {mentor["email"]}</p>
-      </div>
-    </div>
+    <div class="container mt-4">
+        <div class="card enhanced-card">
+            <div class="card-body">
+                <h4 class="card-title text-center" style="text-weight: bold;">{mentor["name"].charAt(0).toUpperCase()}{mentor["name"].slice(1)}</h4>
+                <p class="card-text mb-1">Located in</p>
+                {mentor["city"].charAt(0).toUpperCase()}{mentor["city"].slice(1)}, {mentor["state"]}
+                <p class="card-text mb-1" style="text-weight: bold;">Good at</p>
+                {#each mentor["skill"] as skill}
+                    <span class="badge text-bg-primary me-1">{skill}</span>
+                {/each}
+                <p class="card-text mb-1" style="text-weight: bold;">Contact them through their email:</p>
+                {mentor["email"]}
+            </div>
+        </div>
   </div>
 {:else}
   <h1 class="text-center">Page not found!</h1>
