@@ -8,19 +8,14 @@
       </div>
     </div>
     <div class="row">
+      <div class="col">
+        <a class="fs-1" href = "/tutorials/pure-pursuit">Pure Pursuit</a>
+      </div>
         <div class="col">
-          <a class="fs-1" href = "/tutorials/kotlin">Kotlin</a>
-        </div>
-        <div class="col">
-          <a class="fs-1" href = "/tutorials/weight-springs">Weight Springs</a>
+          <a class="fs-1" href = "/tutorials/weight-springs">Constant Weight Springs</a>
         </div>
       </div>
       <div class="row">
-        <div class="col">
-          <a class="fs-1" href = "/tutorials/pure-pursuit">Pure Pursuit</a>
-        </div>
-        <div class="col">
-          <a class="fs-1" href = "#"></a>
-        </div>
+        
       </div>
   </div>

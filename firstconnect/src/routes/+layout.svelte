@@ -23,9 +23,9 @@
         <li class="nav-item">
             <a class="nav-link" class:active={$page.route.id == "/connect"} href="/connect">Connect</a>
         </li>
-        <li class="nav-item">
+        <!-- <li class="nav-item">
           <a class="nav-link" class:active={$page.route.id == "/faq"} href="/faq">FAQ</a>
-        </li>
+        </li> -->
         <li class="nav-item">
           <a class="nav-link" class:active={$page.route.id == "/tutorials"} href="/tutorials">Tutorials</a>
         </li>

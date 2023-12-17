@@ -9,9 +9,9 @@
     <ul class="list-group mb-3">
         <a href="https://www.youtube.com/@ftc21229/" target="_blank">Quality Control</a>
         <a href="https://www.youtube.com/@11260Robotics" target="_blank">Up-A-Creek Robotics</a>
-        <a href="#" target="_blank">Westwood Tomahawk</a>
-        <a href="#">Justice</a>
-        <a href="#">SuperNova</a>
+        <a href="https://westwoodrobots.org/FTC" target="_blank">Westwood Tomahawk</a>
+        <a href="https://justiceftc.com.br/" target="_blank">Justice</a>
+        <a href="https://www.instagram.com/supernova_22508/" target="_blank">SuperNova</a>
 
     </ul>
 
