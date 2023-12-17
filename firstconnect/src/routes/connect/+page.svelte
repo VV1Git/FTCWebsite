@@ -10,7 +10,6 @@
   
 
     onMount(async () => {
-      const pb = new PocketBase('http://127.0.0.1:8090');
       if ($user?.collectionName == "mentees"){
         users = await pb.collection('mentors').getFullList({sort: '-created',});
       } else{

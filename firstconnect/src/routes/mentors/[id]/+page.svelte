@@ -10,7 +10,6 @@ let mentee: any;
 
 
 onMount(async () => {
-  const pb = new PocketBase('http://127.0.0.1:8090');
     console.log({ slug: $page.params.id })
     mentee = await pb.collection('mentees').getOne($page.params.id);
     console.log(mentee)

@@ -10,7 +10,6 @@ let mentor: any;
 
 
 onMount(async () => {
-  const pb = new PocketBase('http://127.0.0.1:8090');
     console.log({ slug: $page.params.id })
     mentor = await pb.collection('mentors').getOne($page.params.id);
     console.log(mentor)
